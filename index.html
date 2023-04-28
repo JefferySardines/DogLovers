@@ -45,7 +45,7 @@
 
 		.article-button {
 			display: inline-block;
-			background-color: #8c44a9;
+			background-color: #d9b3ff;
 			color: #ffffff;
 			font-size: 24px;
 			padding: 10px 20px;
@@ -53,10 +53,34 @@
 			border-radius: 10px;
 			text-decoration: none;
 			transition: background-color 0.2s ease-in-out;
+			background-image: url("https://cdn.pixabay.com/photo/2017/06/24/23/41/dog-2437110_960_720.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 70%;
+			border: none;
+			cursor: pointer;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+			overflow: hidden;
 		}
 
 		.article-button:hover {
-			background-color: #63256f;
+			background-color: #8c44a9;
+		}
+
+		.article-button:after {
+			content: '';
+			background-color: rgba(255, 255, 255, 0.2);
+			width: 120%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: -10%;
+			transform: skew(-20deg);
+			transition: all 0.4s ease-in-out;
+		}
+
+		.article-button:hover:after {
+			left: -20%;
 		}
 	</style>
 </head>
@@ -72,8 +96,4 @@
 	<div id="main">
 		<p>Welcome to Dog Lovers! Our website is all about celebrating the wonder and joy of dogs. Whether you're a lifelong dog lover or just discovering the amazing world of canines, we have something for you. Explore our collection of articles and resources, and discover the many ways that dogs make our lives better.</p>
 		<a class="article-button" href="article1.html">Article 1</a>
-		<a class="article-button" href="article2.html">Article 2</a>
-		<a class="article-button" href="article3.html">Article 3</a>
-	</div>
-</body>
-</html>
+		<a class="article-button" href="article2.html">Article 2</
